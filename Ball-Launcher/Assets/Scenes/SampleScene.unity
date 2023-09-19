@@ -1101,6 +1101,7 @@ GameObject:
   - component: {fileID: 1922031124}
   - component: {fileID: 1922031123}
   - component: {fileID: 1922031122}
+  - component: {fileID: 1922031126}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1237,6 +1238,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!231 &1922031126
+SpringJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922031121}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 577884999}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_AutoConfigureDistance: 1
+  m_Distance: 2.48
+  m_DampingRatio: 0
+  m_Frequency: 1
 --- !u!1 &2056610505
 GameObject:
   m_ObjectHideFlags: 0
