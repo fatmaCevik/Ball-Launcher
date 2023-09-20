@@ -15,12 +15,17 @@ public class BallHandler : MonoBehaviour
     
     void Update()
     {
-        if(!Touchscreen.current.primaryTouch.press.isPressed)
+        BallMoving();
+    }
+
+    private void BallMoving()
+    {
+        if (!Touchscreen.current.primaryTouch.press.isPressed)
         {
             currentBallRigidbody.isKinematic = false;
             return;
         }
-            
+
         currentBallRigidbody.isKinematic = true;
         Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue();
         Vector3 worldPosition = mainCamera.ScreenToWorldPoint(touchPosition);
