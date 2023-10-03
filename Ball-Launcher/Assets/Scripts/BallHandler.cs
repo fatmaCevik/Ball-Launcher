@@ -68,8 +68,7 @@ public class BallHandler : MonoBehaviour
         touchPosition /= Touch.activeTouches.Count;
 
         //Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue();
-        Vector3 vector3 = mainCamera.ScreenToWorldPoint(touchPosition);
-        Vector3 worldPosition = vector3;
+        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(touchPosition);
         //Debug.Log(worldPosition);
         currentBallRigidbody.position = worldPosition;
     }
